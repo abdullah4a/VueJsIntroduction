@@ -33,3 +33,7 @@ npm run serve
 [3. File Structure and Extensions](https://www.youtube.com/watch?v=Dsx3uyHol9U&list=PLJSdwH9bZnjOzT95dfYTFWrNmM_MAp8IB&index=3)
 [4. Intro to Tags in Vue file](https://www.youtube.com/watch?v=Fix4jB9raAA&list=PLJSdwH9bZnjOzT95dfYTFWrNmM_MAp8IB&index=4)
 [5. Summary](https://www.youtube.com/watch?v=8phU_L8Vjps&list=PLJSdwH9bZnjOzT95dfYTFWrNmM_MAp8IB&index=5)
+
+## My Channel
+
+[Vue Coding Camp](https://www.youtube.com/channel/UCCsAziN5E8-6yYpBHQE-yYQ)
