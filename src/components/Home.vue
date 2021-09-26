@@ -4,7 +4,16 @@
       <h1>{{ msg }}</h1>
       <h1>{{ displayData }}</h1>
     </div>
+    <button @click="countFun">Count + 1</button> <br />
+    <br />
     <button @click="exampleFun">Click me</button>
+    <div>
+      <ul v-for="a in array" :key="a.id">
+        <li>
+          {{ a }}
+        </li>
+      </ul>
+    </div>
     <!-- <Componet2 HomeChild="This is first Child of home" />
     <Componet2 HomeChild="This is 2nd Child" /> -->
   </div>
@@ -22,13 +31,19 @@ export default {
   data() {
     return {
       Istrue: false,
+      count: 1,
       displayData: "Hello form Child",
+      array: [1, 1, 1, 1, 1, 1],
     };
   },
   methods: {
     exampleFun() {
       this.Istrue = true;
       this.displayData = "Data is Changed";
+    },
+    countFun() {
+      this.count++;
+      console.log(this.count);
     },
   },
 };
