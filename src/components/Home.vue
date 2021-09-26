@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <Componet2 :HomeChild="displayData" />
+      <Componet2 @ChangeProps="ChangeData($event)" />
     </div>
     <!-- <button @click="toggle">Toggle</button> -->
   </div>
@@ -21,6 +21,14 @@ export default {
       togle: true,
       displayData: "Hello form Parent",
     };
+  },
+  watch: {
+    displayData: {
+      immediate: true,
+      handler(newValue, oldValue) {
+        console.log(` Old Value = ${oldValue}, New Value= ${newValue}`);
+      },
+    },
   },
   methods: {
     ChangeData(data) {

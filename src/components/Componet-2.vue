@@ -1,8 +1,9 @@
 <template>
   <div>
-    <!-- <h1>{{ HomeChild }}</h1> -->
+    <h1>{{ HomeChild }}</h1>
+    <button @click="changeProp">Change Data</button>
     <!-- <h2>{{ displayMsg }}</h2> -->
-    <div>
+    <!-- <div>
       <label for="FName">Enter First Name</label><br />
       <input type="text" id="FName" v-model="firstName" />
       <br /><br />
@@ -12,7 +13,7 @@
       <button @click="FullName">Show Full Name</button>
       <p>{{ ComputdValue }}</p>
       <p>{{ fulname }}</p>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
@@ -29,10 +30,17 @@ export default {
       //   displayMsg: "Value",
     };
   },
+  updated() {
+    console.log("Updated");
+  },
   computed: {
     fulname: function() {
       return this.firstName + " " + this.SecondName;
     },
+  },
+
+  beforeUpdate() {
+    console.log("Before Update");
   },
   methods: {
     FullName() {
