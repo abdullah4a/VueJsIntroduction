@@ -34,6 +34,10 @@ npm run serve
 [4. Intro to Tags in Vue file](https://www.youtube.com/watch?v=Fix4jB9raAA&list=PLJSdwH9bZnjOzT95dfYTFWrNmM_MAp8IB&index=4)
 [5. Summary](https://www.youtube.com/watch?v=8phU_L8Vjps&list=PLJSdwH9bZnjOzT95dfYTFWrNmM_MAp8IB&index=5)
 
+### Chapter 3
+[12. Components Communication](https://www.youtube.com/watch?v=DTs1VxLzdH0)
+[13. Arguments v-bind v-on](https://www.youtube.com/watch?v=hTrsuDgBz38)
+[14. Input inding / Form Binding](https://www.youtube.com/watch?v=8Xan3gPnO8Q)
 ## My Channel
 
 [Vue Coding Camp](https://www.youtube.com/channel/UCCsAziN5E8-6yYpBHQE-yYQ)
