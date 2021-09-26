@@ -1,13 +1,18 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h1>{{ displayData }}</h1>
+    <!-- <h1>{{ msg }}</h1>
+    <h1>{{ displayData }}</h1> -->
+    <Componet2 HomeChild="This is first Child of home" />
+    <Componet2 HomeChild="This is 2nd Child" />
   </div>
 </template>
-
 <script>
+import Componet2 from "./Componet-2.vue";
 export default {
   name: "Home",
+  components: {
+    Componet2,
+  },
   props: {
     msg: String,
   },
@@ -16,6 +21,7 @@ export default {
       displayData: "Hello form Child",
     };
   },
+  methods: {},
 };
 </script>
 
