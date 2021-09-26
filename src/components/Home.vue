@@ -1,49 +1,31 @@
 <template>
   <div class="hello">
-    <div v-if="Istrue">
-      <h1>{{ msg }}</h1>
-      <h1>{{ displayData }}</h1>
-    </div>
-    <button @click="countFun">Count + 1</button> <br />
-    <br />
-    <button @click="exampleFun">Click me</button>
-    <div>
-      <ul v-for="a in array" :key="a.id">
-        <li>
-          {{ a }}
-        </li>
-      </ul>
-    </div>
-    <!-- <Componet2 HomeChild="This is first Child of home" />
-    <Componet2 HomeChild="This is 2nd Child" /> -->
+    <h1>{{ displayData }}</h1>
+
+    <a :href="google">Google</a>
+    <h2 :style="{ color: 'blue' }">Style arguments</h2>
+    <Componet2 @ChangeProps="ChangeData($event)" />
   </div>
 </template>
 <script>
-// import Componet2 from "./Componet-2.vue";
+import Componet2 from "./Componet-2.vue";
 export default {
   name: "Home",
   components: {
-    // Componet2,
+    Componet2,
   },
   props: {
     msg: String,
   },
   data() {
     return {
-      Istrue: false,
-      count: 1,
-      displayData: "Hello form Child",
-      array: [1, 1, 1, 1, 1, 1],
+      google: "https://google.com",
+      displayData: "Hello form Parent",
     };
   },
   methods: {
-    exampleFun() {
-      this.Istrue = true;
-      this.displayData = "Data is Changed";
-    },
-    countFun() {
-      this.count++;
-      console.log(this.count);
+    ChangeData(data) {
+      this.displayData = data;
     },
   },
 };
