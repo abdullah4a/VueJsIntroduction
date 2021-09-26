@@ -28,11 +28,19 @@ npm run serve
 
 ## Videos Links
 
+### Chapter 1
 [1. Intro to VueJS](https://www.youtube.com/watch?v=V6ycqKJz8Xk&list=PLJSdwH9bZnjOzT95dfYTFWrNmM_MAp8IB)
 [2. Installation](https://www.youtube.com/watch?v=L8fo9PLgMRQ&list=PLJSdwH9bZnjOzT95dfYTFWrNmM_MAp8IB&index=2)
 [3. File Structure and Extensions](https://www.youtube.com/watch?v=Dsx3uyHol9U&list=PLJSdwH9bZnjOzT95dfYTFWrNmM_MAp8IB&index=3)
 [4. Intro to Tags in Vue file](https://www.youtube.com/watch?v=Fix4jB9raAA&list=PLJSdwH9bZnjOzT95dfYTFWrNmM_MAp8IB&index=4)
 [5. Summary](https://www.youtube.com/watch?v=8phU_L8Vjps&list=PLJSdwH9bZnjOzT95dfYTFWrNmM_MAp8IB&index=5)
+### Chapter 2
+[6. Displaying Data](https://www.youtube.com/watch?v=5mr07F6aC4g&list=PLJSdwH9bZnjOzT95dfYTFWrNmM_MAp8IB&index=6)
+[7.Data and Events Handling](https://www.youtube.com/watch?v=JPMZQKO7F0k&list=PLJSdwH9bZnjOzT95dfYTFWrNmM_MAp8IB&index=7)
+[8. Components Creation](https://www.youtube.com/watch?v=XDekayDk1h4&list=PLJSdwH9bZnjOzT95dfYTFWrNmM_MAp8IB&index=8)
+[9. Condional rendering](https://www.youtube.com/watch?v=v7ejE9hVdxI&list=PLJSdwH9bZnjOzT95dfYTFWrNmM_MAp8IB&index=9)
+[10. Looping](https://www.youtube.com/watch?v=1Hiq0DiYFjQ&list=PLJSdwH9bZnjOzT95dfYTFWrNmM_MAp8IB&index=10)
+[11. Recap](https://www.youtube.com/watch?v=MP1yoJ0Mu70&list=PLJSdwH9bZnjOzT95dfYTFWrNmM_MAp8IB&index=11)
 
 ### Chapter 3
 [12. Components Communication](https://www.youtube.com/watch?v=DTs1VxLzdH0)
