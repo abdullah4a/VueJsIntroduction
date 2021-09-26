@@ -1,7 +1,6 @@
 <template
   ><div>
     <h1>{{ HomeChild }}</h1>
-    <button @click="changeProp">change prop</button>
     <!-- <h2>{{ displayMsg }}</h2> -->
   </div>
 </template>
@@ -20,6 +19,12 @@ export default {
     changeProp() {
       this.$emit("ChangeProps", "Helllo from Child");
     },
+  },
+  destroyed() {
+    alert("Destroyed");
+  },
+  beforeDestroy() {
+    alert("Before Destroying");
   },
 };
 </script>

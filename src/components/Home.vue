@@ -1,24 +1,9 @@
 <template>
-  <div class="hello">
-    <h1>{{ displayData }}</h1>
-    <a :href="google">Google</a>
-    <br />
-    <br />
-    <br />
-    <h1 style="white-space:pre-line">{{ data }}</h1>
-    <textarea id="test" cols="30" rows="10" v-model="data"></textarea>
-    <br />
-    <p>{{ UName }}</p>
-    <label for="UName">User Name</label>
-    <input
-      type="text"
-      id="UName"
-      v-model="UName"
-      placeholder="Enter User Name "
-    />
-    <h2 :style="{ color: 'blue' }">Style arguments</h2>
-    <br /><br />
-    <Componet2 @ChangeProps="ChangeData($event)" />
+  <div>
+    <div v-if="togle">
+      <Componet2 :HomeChild="displayData" />
+    </div>
+    <button @click="toggle">Toggle</button>
   </div>
 </template>
 <script>
@@ -33,15 +18,16 @@ export default {
   },
   data() {
     return {
-      UName: "",
-      data: "test",
-      google: "https://google.com",
+      togle: true,
       displayData: "Hello form Parent",
     };
   },
   methods: {
     ChangeData(data) {
       this.displayData = data;
+    },
+    toggle() {
+      this.togle = !this.togle;
     },
   },
   beforeMount() {
