@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div v-if="togle">
+    <div>
       <Componet2 :HomeChild="displayData" />
     </div>
-    <button @click="toggle">Toggle</button>
+    <!-- <button @click="toggle">Toggle</button> -->
   </div>
 </template>
 <script>
