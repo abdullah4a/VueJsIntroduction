@@ -1,7 +1,9 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h1>{{ displayData }}</h1>
+    <div v-if="Istrue">
+      <h1>{{ msg }}</h1>
+      <h1>{{ displayData }}</h1>
+    </div>
     <button @click="exampleFun">Click me</button>
     <!-- <Componet2 HomeChild="This is first Child of home" />
     <Componet2 HomeChild="This is 2nd Child" /> -->
@@ -19,12 +21,14 @@ export default {
   },
   data() {
     return {
+      Istrue: false,
       displayData: "Hello form Child",
     };
   },
   methods: {
     exampleFun() {
-      alert("Hello from Function");
+      this.Istrue = true;
+      this.displayData = "Data is Changed";
     },
   },
 };
