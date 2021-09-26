@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <h1>{{ displayData }}</h1>
   </div>
 </template>
 
@@ -11,7 +12,9 @@ export default {
     msg: String,
   },
   data() {
-    return {};
+    return {
+      displayData: "Hello form Child",
+    };
   },
 };
 </script>
