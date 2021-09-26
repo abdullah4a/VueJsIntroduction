@@ -6,14 +6,12 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "Home",
   props: {
-    // msg: String
+    msg: String,
   },
   data() {
-    return {
-      msg: "Hello form Vue",
-    };
+    return {};
   },
 };
 </script>
