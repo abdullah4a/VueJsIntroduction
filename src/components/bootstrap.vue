@@ -1,26 +1,37 @@
 <template>
   <div>
-    <div>
-      <b-card-group deck>
-        <b-card
-          img-src="https://placekitten.com/300/300"
-          img-alt="Card image"
-          img-top
-        >
-          <b-card-text>
-            Some quick example text to build on the card and make up the bulk of
-            the card's content.
-          </b-card-text>
-        </b-card>
-      </b-card-group>
-    </div>
-    <b-button variant="primary">
-      Primary Button
-    </b-button>
+    <b-progress :value="value" :max="max" show-progress animated></b-progress>
+    <b-progress class="mt-2" :max="max" show-value>
+      <b-progress-bar
+        :value="value * (6 / 10)"
+        variant="success"
+      ></b-progress-bar>
+      <b-progress-bar
+        :value="value * (2.5 / 10)"
+        variant="warning"
+      ></b-progress-bar>
+      <b-progress-bar
+        :value="value * (1.5 / 10)"
+        variant="danger"
+      ></b-progress-bar>
+    </b-progress>
+
+    <b-button class="mt-3" @click="randomValue">Click me</b-button>
   </div>
 </template>
+
 <script>
 export default {
-  name: "bootstrap",
+  data() {
+    return {
+      value: 45,
+      max: 100,
+    };
+  },
+  methods: {
+    randomValue() {
+      this.value = Math.random() * this.max;
+    },
+  },
 };
 </script>

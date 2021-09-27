@@ -15,6 +15,7 @@
       <p>{{ ComputdValue }}</p>
       <p>{{ fulname }}</p>
     </div> -->
+
   </div>
 </template>
 <script>
