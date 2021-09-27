@@ -1,9 +1,28 @@
 <template>
   <div>
     <h1>APIs</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Salary</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="emp in employee" :key="emp.id">
+          <td>{{ emp.employee_name }}</td>
+          <td>{{ emp.employee_salary }}</td>
+          <td>{{ emp.employee_age }}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
 <script>
+import Vue from "vue";
+import axios from "axios";
+Vue.use(axios);
 export default {
   name: "Home",
   components: {},
@@ -11,7 +30,20 @@ export default {
     msg: String,
   },
   data() {
-    return {};
+    return {
+      employee: undefined,
+    };
+  },
+  mounted() {
+    axios
+      .get("https://dummy.restapiexample.com/api/v1/employees")
+      .then((resp) => {
+        // console.warn(resp.data.data);
+        this.employee = resp.data.data;
+      })
+      .catch((err) => {
+        console.error(err);
+      });
   },
 };
 </script>
