@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
+    <h1>{{ Data | cur }}</h1>
     <Home msg="Hello from parents" />
   </div>
 </template>
@@ -12,6 +13,11 @@ export default {
   name: "App",
   components: {
     Home,
+  },
+  data() {
+    return {
+      Data: 10000,
+    };
   },
 };
 </script>

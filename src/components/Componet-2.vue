@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>{{ HomeChild }}</h1>
+    <p>{{ ComputdValue | Upper }}</p>
     <button @click="changeProp">Change Data</button>
     <!-- <h2>{{ displayMsg }}</h2> -->
     <!-- <div>
@@ -17,8 +18,13 @@
   </div>
 </template>
 <script>
+import Vue from "vue";
+Vue.filter("cur", function(val) {
+  return val / 169.65;
+});
 export default {
   name: "Component2",
+
   props: {
     HomeChild: String,
   },

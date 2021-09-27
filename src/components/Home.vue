@@ -1,12 +1,17 @@
 <template>
   <div>
     <div>
+      <h1>{{ displayData | Upper }}</h1>
+      <h2>{{ PKR | cur }}</h2>
+      <br /><br />
       <Componet2 @ChangeProps="ChangeData($event)" />
+      <label for="Test">Enter Amount </label><br />
+      <input type="number" id="Test" v-model="PKR" />
     </div>
-    <!-- <button @click="toggle">Toggle</button> -->
   </div>
 </template>
 <script>
+//date-fns
 import Componet2 from "./Componet-2.vue";
 export default {
   name: "Home",
@@ -19,7 +24,8 @@ export default {
   data() {
     return {
       togle: true,
-      displayData: "Hello form Parent",
+      PKR: 10000,
+      displayData: "hello from parent",
     };
   },
   watch: {
@@ -36,6 +42,9 @@ export default {
     },
     toggle() {
       this.togle = !this.togle;
+    },
+    SaveAmount() {
+      this.PKR = document.querySelector("input").HTMLElement;
     },
   },
   beforeMount() {
