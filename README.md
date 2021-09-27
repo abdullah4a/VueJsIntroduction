@@ -45,7 +45,9 @@ npm run serve
 ### Chapter 3
 [12. Components Communication](https://www.youtube.com/watch?v=DTs1VxLzdH0)
 [13. Arguments v-bind v-on](https://www.youtube.com/watch?v=hTrsuDgBz38)
-[14. Input inding / Form Binding](https://www.youtube.com/watch?v=8Xan3gPnO8Q)
+[14. Input inding / Form Binding](https://youtu.be/Dm9moulqz48)
+[15. Life cycle Hooks](https://youtu.be/UN15kjEw0oU)
+[16. Recap](https://youtu.be/bXi_cNVP1lQ)
 ## My Channel
 
 [Vue Coding Camp](https://www.youtube.com/channel/UCCsAziN5E8-6yYpBHQE-yYQ)
