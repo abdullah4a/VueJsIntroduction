@@ -1,64 +1,17 @@
 <template>
   <div>
-    <div>
-      <h1>{{ displayData | Upper }}</h1>
-      <h2>{{ PKR | cur }}</h2>
-      <br /><br />
-      <Componet2 @ChangeProps="ChangeData($event)" />
-      <label for="Test">Enter Amount </label><br />
-      <input type="number" id="Test" v-model="PKR" />
-    </div>
+    <h1>APIs</h1>
   </div>
 </template>
 <script>
-//date-fns
-import Componet2 from "./Componet-2.vue";
 export default {
   name: "Home",
-  components: {
-    Componet2,
-  },
+  components: {},
   props: {
     msg: String,
   },
   data() {
-    return {
-      togle: true,
-      PKR: 10000,
-      displayData: "hello from parent",
-    };
-  },
-  watch: {
-    displayData: {
-      immediate: true,
-      handler(newValue, oldValue) {
-        console.log(` Old Value = ${oldValue}, New Value= ${newValue}`);
-      },
-    },
-  },
-  methods: {
-    ChangeData(data) {
-      this.displayData = data;
-    },
-    toggle() {
-      this.togle = !this.togle;
-    },
-    SaveAmount() {
-      this.PKR = document.querySelector("input").HTMLElement;
-    },
-  },
-  beforeMount() {
-    console.log("DOM is ready");
-  },
-  mounted() {
-    console.log("DOM is Mounted");
-  },
-  beforeCreate() {
-    this.UName = "abc";
-    console.log("Before create" + this.UName);
-  },
-  created() {
-    console.log("Created");
+    return {};
   },
 };
 </script>
