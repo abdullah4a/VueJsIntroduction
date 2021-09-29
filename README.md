@@ -25,6 +25,24 @@ npm install
 npm run serve
 
 ```
+# Vue-Axios
+## API Installation
+```
+npm install --save axios vue-axios
+```
+Or
+```
+npm i axios
+npm i vue-axios //Optional
+```
+>> add this code to your file  in which you want to use API .. Recomended main .js / app.vue
+```
+import Vue from 'vue'
+import axios from 'axios'
+import VueAxios from 'vue-axios'//Optional
+
+Vue.use(VueAxios, axios)
+```
 
 ## Videos Links
 
