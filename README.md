@@ -25,7 +25,16 @@ npm install
 npm run serve
 
 ```
+## Bootstrap Installation
 
+```
+vue add bootstrap-vue
+```
+>> Add these codes in your app.vue style tag
+```
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+```
 ## Videos Links
 
 ### Chapter 1
