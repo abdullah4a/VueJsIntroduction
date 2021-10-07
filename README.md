@@ -69,4 +69,4 @@ vue add bootstrap-vue
 
 ## My Channel
 
-[Vue Coding Camp](https://www.youtube.com/channel/UCCsAziN5E8-6yYpBHQE-yYQ)
+[Vue Coding Camp](https://www.youtube.com/channel/UCXGLOxAPJMDQXFgLFUVUUtw/)
