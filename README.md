@@ -30,7 +30,7 @@ npm run serve
 
 ### Chapter 1
 [1. Intro to VueJS](https://youtu.be/C1zCaXLoUvU)
-[2. Installation](https://www.youtube.com/watch?v=L8fo9PLgMRQ&list=PLJSdwH9bZnjOzT95dfYTFWrNmM_MAp8IB&index=2)
+[2. Installation](https://youtu.be/_TMdSWoai4E)
 [3. File Structure and Extensions](https://www.youtube.com/watch?v=Dsx3uyHol9U&list=PLJSdwH9bZnjOzT95dfYTFWrNmM_MAp8IB&index=3)
 [4. Intro to Tags in Vue file](https://www.youtube.com/watch?v=Fix4jB9raAA&list=PLJSdwH9bZnjOzT95dfYTFWrNmM_MAp8IB&index=4)
 [5. Summary](https://www.youtube.com/watch?v=8phU_L8Vjps&list=PLJSdwH9bZnjOzT95dfYTFWrNmM_MAp8IB&index=5)
